@@ -48,5 +48,8 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  }
+  },
+  // error: document is not defined
+  // https://github.com/nuxt/nuxt.js/issues/3804
+  cache: false
 }
