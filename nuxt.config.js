@@ -38,7 +38,12 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  // modules: [],
+  // axios挂载到vue实例上
+  modules: ['@nuxtjs/axios'],
+  axios: {
+    //
+  },
   /*
    ** Build configuration
    */

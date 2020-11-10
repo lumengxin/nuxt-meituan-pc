@@ -10,7 +10,10 @@
       <el-col :span="6">
         <div class="m-life-login">
           <h4>
-            <img src="//s0.meituan.net/bs/fe-web-meituan/2d05c2b/img/avatar.jpg" alt="img" />
+            <img
+              src="//s0.meituan.net/bs/fe-web-meituan/2d05c2b/img/avatar.jpg"
+              alt="img"
+            />
           </h4>
           <p class="m-life-login-name">hi,你好</p>
           <p>
@@ -38,7 +41,10 @@
       </el-col>
       <el-col :span="6">
         <div class="m-life-downapp">
-          <img src="//s1.meituan.net/bs/fe-web-meituan/60ac9a0/img/download-qr.png" alt="下载app" />
+          <img
+            src="//s1.meituan.net/bs/fe-web-meituan/60ac9a0/img/download-qr.png"
+            alt="下载app"
+          />
           <p>美团APP手机版</p>
           <h4><span class="red">1元起</span><em class="gary">吃喝玩乐</em></h4>
         </div>

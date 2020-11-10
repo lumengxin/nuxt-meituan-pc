@@ -3,7 +3,10 @@
     <!-- Eemm: el-row>el-col*3 -->
     <el-row class="m-header-searchbar">
       <el-col :span="3" class="left">
-        <img src="//s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png" alt="美团" />
+        <img
+          src="//s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png"
+          alt="美团"
+        />
       </el-col>
       <el-col :span="15" class="center">
         <div class="wrapper">
@@ -40,7 +43,9 @@
           <li><nuxt-link to="/" class="takeout">美团外买</nuxt-link></li>
           <li><nuxt-link to="/movie" class="takeout">猫眼电影</nuxt-link></li>
           <li><nuxt-link to="/hotel" class="takeout">美团酒店</nuxt-link></li>
-          <li><nuxt-link to="/apartment" class="takeout">名宿/公寓</nuxt-link></li>
+          <li>
+            <nuxt-link to="/apartment" class="takeout">名宿/公寓</nuxt-link>
+          </li>
           <li><nuxt-link to="/takeout" class="takeout">商家入驻</nuxt-link></li>
         </ul>
       </el-col>
