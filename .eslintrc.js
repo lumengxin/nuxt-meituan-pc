@@ -22,6 +22,10 @@ module.exports = {
     'nuxt/no-cjs-in-config': 'off',
     // 关闭console.log报错
     'no-console': 'off',
-    'prefer-const': 'off'
+    'prefer-const': 'off',
+    'no-unused-vars': 'off',
+    'prettier/prettier': [
+      'warn'
+    ]
   }
 }

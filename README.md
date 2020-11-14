@@ -63,8 +63,16 @@ MongoDb, redis, Robo 3T软件安装
 ### 数据结构设计
 
 ### 接口设计
+
 #### 1.登录注册等相关接口
 引入相关包，开发
+
+#### 2.城市服务相关接口
+
+#### 数据库导入
+> mongoimport -d dbs[数据库] -c test[数据集合] pois.dat[数据源]
+
+eg: mongoimport -d nuxt-meituan-pc -c areas areas.dat
 
 **测试接口：**
 启动服务：redis-server(没有配置环境变量，需要从安装目录执行)；
