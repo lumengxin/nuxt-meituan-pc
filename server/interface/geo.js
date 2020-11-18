@@ -98,4 +98,27 @@ router.get('/city', async (ctx) => {
   }
 })
 
+router.get('/hotCity', async ctx => {
+  let list = [
+    '北京市',
+    '上海市',
+    '广州省',
+    '深圳市',
+    '天津市',
+    '西安市',
+    '杭州市',
+    '武汉市',
+    '南京市',
+    '成都市'
+  ]
+  let result = await City.find()
+  let nList = []
+  result.forEach(item => {
+    nList = nList.concat(item.value.filter(k => list.includes(k.name) || list.includes(k.province)))
+  })
+  ctx.body = {
+    hots: nList
+  }
+})
+
 export default router
