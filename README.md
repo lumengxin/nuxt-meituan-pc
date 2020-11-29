@@ -79,6 +79,15 @@ eg: mongoimport -d nuxt-meituan-pc -c areas areas.dat
          mongod(开机自启，则不需要)
 
 
+## 第三方服务
+
+### 高德地图
+
+高德开放平台 - 注册登录 - 控制台 - 应用管理 - 创建新应用 - 添加 - 生成key
+
+使用：首页 - 产品介绍 - 地图 - jsApi - 准备/地图控件
+
+
 
 
 

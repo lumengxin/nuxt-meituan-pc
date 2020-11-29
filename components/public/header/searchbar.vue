@@ -23,17 +23,26 @@
           </button>
           <dl v-if="isHotPlace" class="hotPlace">
             <dt v-for="(item, idx) in hotPlace" :key="idx">
-              {{ item.name }}
+              <a :href="'/products?keyword=' + encodeURIComponent(item.name)">{{
+                item.name
+              }}</a>
             </dt>
           </dl>
           <dl v-if="isSearchList" class="searchList">
             <dd v-for="(item, idx) in searchList" :key="idx">
-              {{ item.name }}
+              <a :href="'/products?keyword=' + encodeURIComponent(item.name)">{{
+                item.name
+              }}</a>
             </dd>
           </dl>
         </div>
         <p class="suggset">
-          <a v-for="(item, idx) in hotPlace.slice(0, 3)" :key="idx" href="#">{{ item.name }}&nbsp;&nbsp;</a>
+          <a
+            v-for="(item, idx) in hotPlace.slice(0, 3)"
+            :key="idx"
+            :href="'/products?keyword=' + encodeURIComponent(item.name)"
+            >{{ item.name }}&nbsp;&nbsp;</a
+          >
         </p>
         <ul class="nav">
           <li><nuxt-link to="/" class="takeout">美团外买</nuxt-link></li>
@@ -86,7 +95,7 @@ export default {
       return this.isFocus && this.search
     },
     ...mapState({
-      hotPlace: state => state.home.hotPlace
+      hotPlace: (state) => state.home.hotPlace
     })
   },
   methods: {

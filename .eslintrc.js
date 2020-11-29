@@ -24,6 +24,7 @@ module.exports = {
     'no-console': 'off',
     'prefer-const': 'off',
     'no-unused-vars': 'off',
+    'no-unused-components': 'off',
     'prettier/prettier': [
       'warn'
     ]
